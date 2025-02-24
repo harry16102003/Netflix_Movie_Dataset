@@ -13,10 +13,10 @@
 * Date Conversion: The 'Release_Date' column, initially of object type, was converted to datetime objects using pd.to_datetime(). Then, the year was extracted from the datetime objects.
 * Column Removal: Irrelevant columns ('Overview', 'Original_Language', 'Poster_Url') were dropped from the DataFrame using df.drop().
 *Categorizing 'Vote_Average':
-1. A function categorize_col was defined to categorize a given column based on its quartiles.
-2. The describe() method was used within the function to calculate the quartile edges for categorization.
+1. A function categorize_col was defined to categorize a given column based on its quartiles.<br>
+2. The describe() method was used within the function to calculate the quartile edges for categorization.<br>
 3.The 'Vote_Average' column was categorized into 'not_popular', 'below_avg', 'average', and 'popular' based on its distribution.
-Genre Column Handling:
+* Genre Column Handling:
 The 'Genre' column, which contained comma-separated values, was split into individual genres using df['Genre'].str.split(', ').
 The explode() method was used to transform each row with multiple genres into multiple rows, each with a single genre.
 The 'Genre' column was converted to the 'category' data type to improve memory usage and performance.
