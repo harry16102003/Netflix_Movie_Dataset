@@ -1,4 +1,5 @@
 # Netflix_Movie_Dataset
+To explore and analyze a Netflix movie dataset to gain insights into movie trends, popularity, and genres.
 
 ### Data Loading and Initial Exploration:
 * Libraries: The analysis started by importing necessary libraries: numpy, pandas, matplotlib.pyplot, and seaborn.
